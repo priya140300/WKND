@@ -113,25 +113,59 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
 
+
+ console.log(block);
+ 
+
+
   // decorate nav DOM
   block.textContent = '';
+  //creating the black horizontal div
+  const layoutElement = document.createElement("div");
+  layoutElement.className="header-layout";
+  block.appendChild(layoutElement);
+  //creating two child elements inside the layoutElement
+  //1st div
+  const sign = document.createElement("div");
+  sign.className="header-signIn";
+  sign.textContent="SIGN IN";
+  layoutElement.appendChild(sign);
+
+    //2nd div
+  const lang = document.createElement("div");
+  lang.className="header-lang"; 
+  const img = document.createElement("img");
+  img.className="lang-img";
+  img.src="https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg";
+  img.alt="us-flag";
+  
+  lang.appendChild(img);
+  layoutElement.appendChild(lang);
+  
+  console.log(layoutElement);
+
+  // console.log(block);
+  
+  
+  
+  
   const nav = document.createElement('nav');
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
-
+  
   const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
   });
-
+  
   const navBrand = nav.querySelector('.nav-brand');
   const brandLink = navBrand.querySelector('.button');
   if (brandLink) {
     brandLink.className = '';
     brandLink.closest('.button-container').className = '';
   }
-
+  
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
@@ -145,22 +179,44 @@ export default async function decorate(block) {
       });
     });
   }
-
+  
   // hamburger for mobile
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');
   hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
-      <span class="nav-hamburger-icon"></span>
-    </button>`;
+  <span class="nav-hamburger-icon"> </span>
+  </button>`;
   hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
   nav.prepend(hamburger);
   nav.setAttribute('aria-expanded', 'false');
   // prevent mobile nav behavior on window resize
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
-
+  
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+  
+  //creating search 
+
+  const navtools = block.querySelector(".nav-tools");
+  console.log(navtools);
+
+  const icon = document.createElement("i");
+  icon.className="nav-icon";
+  navtools.appendChild(icon);
+
+  const navinput = document.createElement("input");
+  navinput.className="nav-input";
+  navinput.placeholder="SEARCH"
+  navtools.appendChild(navinput);
+
+  const navInput =  block.querySelector(".nav-input");
+  console.log(navInput);
+  navInput.addEventListener("click",() => {
+    window.location.href="https://www.google.com";
+
+  })
+  
 }

@@ -1,0 +1,63 @@
+/* .guides-container{
+    margin-bottom: 10px;
+    margin-right: 0;
+    margin-left: 0;
+} */
+/* .main > .section:first-of-type {
+    margin-bottom: -47px;
+} */
+ #guide-cont{
+    margin-bottom: -58px;
+
+ }
+
+.guide-desc{
+  
+    width: 84%;
+}
+.guide-descVar{
+  
+    width: 84%;
+}
+
+.guide-desc > h3{
+    height: 36px;
+    display: flex;
+    margin-top: -8px;
+    padding-left: 97px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 4px;
+
+}
+.guide-descVar > h3{
+    height: 36px;
+    display: flex;
+    margin-top: -8px;
+    padding-left: 105px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 4px;
+
+}
+
+.guide-desc > h5{
+    font-family: var(--body-font-family);
+    font-size: 13px;
+    font-weight: 600;
+    height: 21px;
+    padding-left:85px;
+
+
+}
+.guide-descVar > h5{
+    font-family: var(--body-font-family);
+    font-size: 13px;
+    font-weight: 600;
+    height: 21px;
+    padding-left:100px;
+
+
+}
