@@ -72,6 +72,43 @@ function buildAutoBlocks(main) {
   });
 }
 
+const addShadowOnScrollMagz = () => {
+  window.addEventListener("scroll", function () {
+    const topDiv = document.querySelector(".header"); // Adjust selector as needed
+    const bottomDiv = document.querySelector(".title-wrapper"); // Adjust selector as needed
+
+    if (!topDiv || !bottomDiv) return; // Ensure elements exist
+
+    const bottomRect = bottomDiv.getBoundingClientRect();
+    const topRect = topDiv.getBoundingClientRect();
+
+    if (bottomRect.top <= topRect.bottom) {
+      topDiv.classList.add("shadow");
+    } else {
+      topDiv.classList.remove("shadow");
+    }
+  });
+}
+
+const addShadowOnScrollAbout = () => {
+  window.addEventListener("scroll", function () {
+    const topDiv = document.querySelector(".header"); // Adjust selector as needed
+    const bottomDiv = document.querySelector(".guides-container"); // Adjust selector as needed
+
+    if (!topDiv || !bottomDiv) return; // Ensure elements exist
+
+    const bottomRect = bottomDiv.getBoundingClientRect();
+    const topRect = topDiv.getBoundingClientRect();
+
+    if (bottomRect.top <= topRect.bottom) {
+      topDiv.classList.add("shadow");
+    } else {
+      topDiv.classList.remove("shadow");
+    }
+  });
+}
+
+
 
 
 
@@ -134,6 +171,8 @@ async function loadLazy(doc) {
   loadFonts();
 
   addShadowOnScroll();
+  addShadowOnScrollMagz();
+  addShadowOnScrollAbout();
 
   const feature_cont = doc.querySelector(".section .default-content-wrapper");
   console.log(feature_cont);
@@ -158,6 +197,10 @@ async function loadLazy(doc) {
   
   feature_block.insertBefore(feature_desc, feature_block.firstChild);
   console.log(feature_desc);
+
+  const featAction = feature_desc.querySelectorAll("p")[2];
+  console.log(featAction);
+  featAction.className="content_action";
   
 
   const featureDesc = doc.querySelector(".feature-desc"); // Define it before using
@@ -347,7 +390,8 @@ const section4 = document.querySelectorAll(".section")[4];
   placesWrapper.appendChild(trip_section);
 
 
-
+const featureDescription = document.querySelector(".feature-desc");
+console.log(featureDescription);
 
 
 

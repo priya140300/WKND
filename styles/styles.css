@@ -343,6 +343,7 @@ main .section.highlight {
   height: 100%;
 }
 .artTitle{
+  color: black;
   width: 260px;
   font-size: 18px;
   line-height: 27px;
