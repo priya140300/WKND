@@ -203,19 +203,49 @@ export default async function decorate(block) {
   const navtools = block.querySelector(".nav-tools");
   console.log(navtools);
 
-  const icon = document.createElement("i");
-  icon.className="nav-icon";
-  navtools.appendChild(icon);
+ 
+  navtools.innerHTML="";
+  // const navinput = document.createElement("input");
+  // navinput.className="nav-input";
+  // navinput.placeholder="SEARCH";
+  // //
+  // const icon = document.createElement("i");
+  // icon.className="nav-icon";
+  
+  // navInput.appendChild(icon);
+  // //
 
-  const navinput = document.createElement("input");
-  navinput.className="nav-input";
-  navinput.placeholder="SEARCH"
-  navtools.appendChild(navinput);
+  // // navtools.appendChild(navinput);
+  // navtools.innerHTML=navinput.innerHTML;
+
+
+
+  const navContainer = document.createElement("div");
+navContainer.className = "nav-container"; 
+
+
+const navinput = document.createElement("input");
+navinput.className = "nav-input";
+navinput.placeholder = "SEARCH";
+
+
+const icon = document.createElement("i");
+icon.className = "nav-icon";
+
+
+navContainer.appendChild(navinput);
+navContainer.appendChild(icon);
+
+
+navtools.appendChild(navContainer);
+
 
   const navInput =  block.querySelector(".nav-input");
   console.log(navInput);
-  navInput.addEventListener("click",() => {
-    window.location.href="https://www.google.com";
+  navInput.addEventListener("keydown",(event) => {
+    if (event.key === "Enter") {
+      window.location.href = "https://www.google.com";
+    }
 
   })
   

@@ -393,14 +393,30 @@ const section4 = document.querySelectorAll(".section")[4];
 const featureDescription = document.querySelector(".feature-desc");
 console.log(featureDescription);
 
+//creating div for each item to style for dektop devices
+document.addEventListener("DOMContentLoaded", () => {
+  const articlesWrapper = document.querySelector(".articles-wrapper");
+  const paragraphs = Array.from(articlesWrapper.querySelectorAll("p"));
 
+  for (let i = 0; i < paragraphs.length; i += 3) {
+    const wrapperDiv = document.createElement("div");
+    wrapperDiv.className = "article-group";
 
+    for (let j = i; j < i + 3 && j < paragraphs.length; j++) {
+      wrapperDiv.appendChild(paragraphs[j]);
+    }
 
-  
+    articlesWrapper.insertBefore(wrapperDiv, paragraphs[i]);
+  }
+});
+
   
 
 
 }
+
+
+
 
 /**
  * Loads everything that happens a lot later,
