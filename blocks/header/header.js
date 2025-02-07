@@ -252,13 +252,13 @@ navtools.appendChild(navContainer);
     });
   });
 
-  const navItem1 = navItems.querySelectorAll("li")[0];
+  const navItem1 = navItemsWrap.querySelectorAll("li")[0];
   
-  const navItem2 = navItems.querySelectorAll("li")[3];
+  const navItem2 = navItemsWrap.querySelectorAll("li")[3];
 
   navItem1.addEventListener('click', () => {
     
-    window.location.href = 'https://main--wknd--priya140300.aem.live/magazine/magazine';
+    window.location="/magazine";
   });
   
   navItem2.addEventListener('click', () => {
