@@ -60,7 +60,7 @@ export default async function decorate(block){
      
     });
      
-   const articlelistContainer = document.querySelector(".articlelist");
+   const articlelistContainer = document.querySelector(".article-list");
    articlelistContainer.prepend(articlesWrap);
    console.log(articlesWrap);
 
