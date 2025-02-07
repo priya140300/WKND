@@ -258,7 +258,7 @@ navtools.appendChild(navContainer);
 
   navItem1.addEventListener('click', () => {
     
-    window.location.href = 'https://main--wknd--priya140300.aem.page/magazine/magazine';
+    window.location.href = 'https://main--wknd--priya140300.aem.live/magazine/magazine';
   });
   
   navItem2.addEventListener('click', () => {
