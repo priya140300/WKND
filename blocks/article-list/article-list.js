@@ -1,7 +1,6 @@
 export default async function decorate(block){
     //extracting json from dom
     //creating element for each article and populating it with the extracted daat
-    //applying the same css classes as done for the home page
     const fetchContent = async () =>{
 
         try{
