@@ -26,15 +26,15 @@ export default function decorate(block) {
     //selecting the third div class name details-wrap and accessing its elements
     const detailsWrapper3 = block.querySelectorAll(".details-wrap")[2];
     detailsWrapper3.querySelectorAll("div")[0].className="details-img";
-    detailsWrapper3.querySelectorAll("div")[1].className="artist-nameVar";
-    detailsWrapper3.querySelectorAll("div")[2].className="artist-domainVar";
+    detailsWrapper3.querySelectorAll("div")[1].className="artist-name";
+    detailsWrapper3.querySelectorAll("div")[2].className="artist-domain";
     detailsWrapper3.querySelectorAll("div")[3].className="social-link";
  
      //selecting the fourth div class name details-wrap and accessing its elements
      const detailsWrapper4 = block.querySelectorAll(".details-wrap")[3];
      detailsWrapper4.querySelectorAll("div")[0].className="details-img";
-     detailsWrapper4.querySelectorAll("div")[1].className="artist-nameVar";
-     detailsWrapper4.querySelectorAll("div")[2].className="artist-domainVar";
+     detailsWrapper4.querySelectorAll("div")[1].className="artist-name";
+     detailsWrapper4.querySelectorAll("div")[2].className="artist-domain";
      detailsWrapper4.querySelectorAll("div")[3].className="social-link";
      
      //creating element for yellow underline
@@ -48,6 +48,20 @@ export default function decorate(block) {
      console.log(contentPara);
     //  const contentPara = contentDetails.querySelector("p");
       contentPara.className="content-para";
+
+
+
+     
+
+
+
+
+
+
+      // })
+
+
+
     
       
 

@@ -140,6 +140,7 @@ export default async function decorate(block) {
   img.alt="us-flag";
   
   lang.appendChild(img);
+  
   layoutElement.appendChild(lang);
   
   console.log(layoutElement);
@@ -205,19 +206,7 @@ export default async function decorate(block) {
 
  
   navtools.innerHTML="";
-  // const navinput = document.createElement("input");
-  // navinput.className="nav-input";
-  // navinput.placeholder="SEARCH";
-  // //
-  // const icon = document.createElement("i");
-  // icon.className="nav-icon";
-  
-  // navInput.appendChild(icon);
-  // //
-
-  // // navtools.appendChild(navinput);
-  // navtools.innerHTML=navinput.innerHTML;
-
+ 
 
 
   const navContainer = document.createElement("div");
@@ -248,5 +237,36 @@ navtools.appendChild(navContainer);
     }
 
   })
+
+  //accessing li elements for hover effect
+  const navItemsWrap = navSections.querySelector("ul");
+  const navItems = navItemsWrap.querySelectorAll("li");
+  console.log(navItems);
+
+  navItems.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      item.classList.add("nav_action");
+    });
+    item.addEventListener("mouseout", () => {
+      item.classList.remove("nav_action");
+    });
+  });
+
+  const navItem1 = navItems.querySelectorAll("li")[0];
+  
+  const navItem2 = navItems.querySelectorAll("li")[3];
+
+  navItem1.addEventListener('click', () => {
+    
+    window.location.href = 'https://main--wknd--priya140300.aem.page/magazine/magazine';
+  });
+  
+  navItem2.addEventListener('click', () => {
+    
+    window.location.href = 'https://main--wknd--priya140300.aem.page/about/about';
+  });
+
+  console.log(navItems);
+
   
 }

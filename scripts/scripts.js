@@ -393,27 +393,275 @@ const section4 = document.querySelectorAll(".section")[4];
 const featureDescription = document.querySelector(".feature-desc");
 console.log(featureDescription);
 
-//creating div for each item to style for dektop devices
-document.addEventListener("DOMContentLoaded", () => {
-  const articlesWrapper = document.querySelector(".articles-wrapper");
-  const paragraphs = Array.from(articlesWrapper.querySelectorAll("p"));
+//display:flex
+const articlesFlex = document.querySelector(".articles-wrapper");
+console.log(articlesFlex);
+//first div
+const flexItem1 = document.createElement("div");
+flexItem1.className="flex-item1";
+ const imgItem1 = articlesFlex.querySelectorAll("p")[0];
+ console.log(imgItem1);
 
-  for (let i = 0; i < paragraphs.length; i += 3) {
-    const wrapperDiv = document.createElement("div");
-    wrapperDiv.className = "article-group";
+console.log(articlesFlex);
 
-    for (let j = i; j < i + 3 && j < paragraphs.length; j++) {
-      wrapperDiv.appendChild(paragraphs[j]);
-    }
+const titleItem1 = articlesFlex.querySelectorAll("p")[1];
 
-    articlesWrapper.insertBefore(wrapperDiv, paragraphs[i]);
-  }
-});
+console.log(articlesFlex);
 
-  
+const descItem1 = articlesFlex.querySelectorAll("p")[2];
+
+console.log(flexItem1);
+flexItem1.appendChild(imgItem1);
+ flexItem1.appendChild(titleItem1);
+ flexItem1.appendChild(descItem1);
+
+articlesFlex.prepend(flexItem1);
+console.log(articlesFlex);
+
+
+//second div
+
+const flexItem2 = document.createElement("div");
+flexItem2.className="flex-item2";
+ const imgItem2 = articlesFlex.querySelectorAll("p")[3];
+ console.log(imgItem2);
+
+console.log(articlesFlex);
+
+const titleItem2 = articlesFlex.querySelectorAll("p")[4];
+
+console.log(articlesFlex);
+
+const descItem2 = articlesFlex.querySelectorAll("p")[5];
+
+console.log(flexItem2);
+flexItem2.appendChild(imgItem2);
+ flexItem2.appendChild(titleItem2);
+ flexItem2.appendChild(descItem2);
+
+ articlesFlex.appendChild(flexItem2);
+console.log(articlesFlex);
+
+
+
+
+//third div
+
+const flexItem3 = document.createElement("div");
+flexItem3.className="flex-item3";
+ const imgItem3 = articlesFlex.querySelectorAll("p")[3];
+ console.log(imgItem3);
+
+console.log(articlesFlex);
+
+const titleItem3 = articlesFlex.querySelectorAll("p")[4];
+
+console.log(articlesFlex);
+
+const descItem3 = articlesFlex.querySelectorAll("p")[5];
+
+console.log(flexItem3);
+flexItem3.appendChild(imgItem3);
+ flexItem3.appendChild(titleItem3);
+ flexItem3.appendChild(descItem3);
+
+ articlesFlex.append(flexItem3);
+console.log(articlesFlex);
+
+
+
+
+
+//fourth div
+
+
+const flexItem4 = document.createElement("div");
+flexItem4.className="flex-item4";
+ const imgItem4 = articlesFlex.querySelectorAll("p")[3];
+ console.log(imgItem4);
+
+console.log(articlesFlex);
+
+const titleItem4 = articlesFlex.querySelectorAll("p")[4];
+
+console.log(articlesFlex);
+
+const descItem4 = articlesFlex.querySelectorAll("p")[5];
+
+console.log(flexItem4);
+flexItem4.appendChild(imgItem4);
+ flexItem4.appendChild(titleItem4);
+ flexItem4.appendChild(descItem4);
+
+ articlesFlex.append(flexItem4);
+console.log(articlesFlex);
+
+const content_Act = articlesFlex.querySelector(".content_action");
+
+articlesFlex.appendChild(content_Act);
+const flexLine = articlesFlex.querySelector(".arc-line");
+articlesFlex.appendChild(flexLine);
+console.log(articlesFlex);
+
+//creating span ele
+const contentSpan  =  document.createElement("span");
+contentSpan.textContent="ALL ARTICLES";
+content_Act.innerHTML = ''; 
+content_Act.appendChild(contentSpan);
+console.log(content_Act);
+content_Act.className="content-act";
+contentSpan.className="content_action"
+
+//schanging the class names of span and para of content_acction
+
+//creatinf flex for adventures
+
+//display:flex
+const adventureFlex = document.querySelector(".places-Wrapper");
+console.log(adventureFlex);
+//first div
+const flexadvItem1 = document.createElement("div");
+flexadvItem1.className="flex-item1";
+ const advimgItem1 = adventureFlex.querySelectorAll("p")[0];
+ console.log(advimgItem1);
+
+console.log(adventureFlex);
+
+const advtitleItem1 = adventureFlex.querySelectorAll("p")[1];
+
+console.log(articlesFlex);
+
+const advdescItem1 = adventureFlex.querySelectorAll("p")[2];
+
+console.log(flexadvItem1);
+flexadvItem1.appendChild(advimgItem1);
+ flexadvItem1.appendChild(advtitleItem1);
+ flexadvItem1.appendChild(advdescItem1);
+
+ adventureFlex.prepend(flexadvItem1);
+console.log(adventureFlex);
+
+
+//second div
+
+const flexadvItem2 = document.createElement("div");
+flexadvItem2.className="flex-item2";
+ const advimgItem2 = adventureFlex.querySelectorAll("p")[3];
+ console.log(advimgItem2);
+
+console.log(adventureFlex);
+
+const advtitleItem2 = adventureFlex.querySelectorAll("p")[4];
+
+console.log(adventureFlex);
+
+const advdescItem2 = adventureFlex.querySelectorAll("p")[5];
+
+console.log(flexadvItem2);
+
+flexadvItem2.appendChild(advimgItem2);
+ flexadvItem2.appendChild(advtitleItem2);
+ flexadvItem2.appendChild(advdescItem2);
+
+ adventureFlex.appendChild(flexadvItem2);
+console.log(adventureFlex);
+
+
+
+
+//third div
+
+const flexadvItem3 = document.createElement("div");
+flexadvItem3.className="flex-item3";
+ const advimgItem3 = adventureFlex.querySelectorAll("p")[3];
+ console.log(advimgItem3);
+
+console.log(adventureFlex);
+
+const advtitleItem3 = adventureFlex.querySelectorAll("p")[4];
+
+console.log(adventureFlex);
+
+const advdescItem3 = adventureFlex.querySelectorAll("p")[5];
+
+console.log(flexadvItem3);
+flexadvItem3.appendChild(advimgItem3);
+ flexadvItem3.appendChild(advtitleItem3);
+ flexadvItem3.appendChild(advdescItem3);
+
+ adventureFlex.append(flexadvItem3);
+console.log(adventureFlex);
+
+
+
+
+
+//fourth div
+
+
+const flexadvItem4 = document.createElement("div");
+flexadvItem4.className="flex-item4";
+ const advimgItem4 = adventureFlex.querySelectorAll("p")[3];
+ console.log(advimgItem4);
+
+console.log(adventureFlex);
+
+const advtitleItem4 = adventureFlex.querySelectorAll("p")[4];
+
+console.log(adventureFlex);
+
+const advdescItem4 = adventureFlex.querySelectorAll("p")[5];
+
+console.log(flexadvItem4);
+flexadvItem4.appendChild(advimgItem4);
+ flexadvItem4.appendChild(advtitleItem4);
+ flexadvItem4.appendChild(advdescItem4);
+
+ adventureFlex.append(flexadvItem4);
+console.log(adventureFlex);
+
+const trip_Act = adventureFlex.querySelector(".trip-action");
+
+adventureFlex.appendChild(trip_Act);
+const advtLine = adventureFlex.querySelector(".arc-line");
+adventureFlex.appendChild(advtLine);
+console.log(adventureFlex);
+
+//creating span ele
+const advtSpan  =  document.createElement("span");
+advtSpan.textContent="ALL ARTICLES";
+trip_Act.innerHTML = ''; 
+trip_Act.appendChild(advtSpan);
+console.log(trip_Act);
+trip_Act.className="trip-act";
+advtSpan.className="trip_action"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
+
+
 
 
 

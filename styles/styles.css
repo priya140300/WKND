@@ -244,11 +244,7 @@ main > .section:first-of-type {
   margin-top: 0;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
-  }
-}
+
 
 /* section metadata */
 main .section.light,
@@ -386,7 +382,7 @@ main .section.highlight {
 
   
 }
-.trip-action{
+.trip_action{
   color: black !important;
   margin: 18px 0px;
   height: 49px;
@@ -505,11 +501,28 @@ color: #4a4646;
   color: rgb(95 93 93);
 
 }
-  @media (width >= 548px) {
+.content-act{
+  width: 100%;
+}
+.trip-act{
+  width: 100%;
+}
+  @media (width >= 556px) {
     .articles-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
   
 
     }
+    .places-Wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+   
+
     
   }
  

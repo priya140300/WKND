@@ -27,16 +27,14 @@
   text-align: start;
 }
 .header-signIn{
-  box-sizing: border-box;
 
-  text-align: left;
   color: rgb(247,247,247);
   font-family: var(--body-font-family);
-  height: 21px;
+ 
   font-size: 12px;
-  width: 66%;
+  
   padding-left: 14px;
-  padding-right: 14px;
+  
   line-height: 24px;
 }
 .header-lang{
@@ -46,10 +44,8 @@
   font-family: var(--body-font-family);
   font-size: 14px;
   line-height: 21px;
-  padding-left: 14px;
-  padding-right: 14px;
-  text-align: start;
-  width: 33%;
+ margin-right: 36px;
+  justify-content: space-between;
   gap: 6px;
 }
 .lang-img{
@@ -86,7 +82,7 @@ header .nav-wrapper {
   width: 100vw;
   line-height: 27px;
   padding-bottom: 15px;
-  padding-top: 15px;
+  padding-top: 21px;
   text-align: left;
   /* transition: padding-bottom 0.3s ease, padding-top 0.3s ease; */
 }
@@ -251,9 +247,10 @@ header nav .nav-sections {
 }
 
 header nav[aria-expanded='true'] .nav-sections {
-  display: block;
+  display: none;
   visibility: visible;
   align-self: start;
+  
 }
 
 header nav .nav-sections ul {
@@ -274,16 +271,25 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
-@media (width >= 900px) {
+@media (width >= 1024px) {
   header nav .nav-sections {
     display: block;
     visibility: visible;
     white-space: nowrap;
+    font-family: var(--body-font-family);
+    font-size: 18px;
+    line-height: 27px;
   }
 
   header nav[aria-expanded='true'] .nav-sections {
     align-self: unset;
+    display: block;
+    visibility: visible;
+    width: 394px;
+    margin-left: 24%;
   }
+
+ 
 
   header nav .nav-sections .nav-drop {
     position: relative;
@@ -320,6 +326,103 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
+    font-family: var(--body-font-family);
+    font-size: 13px;
+    color: rgb(81, 79, 79);
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > ul {
+    display: none;
+    position: relative;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
+    display: block;
+    position: absolute;
+    left: -24px;
+    width: 200px;
+    top: 150%;
+    padding: 16px;
+    background-color: var(--light-color);
+    white-space: initial;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 16px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid var(--light-color);
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
+    padding: 8px 0;
+  }
+}
+
+@media (width >= 1200px) {
+  header nav .nav-sections {
+    display: block;
+    visibility: visible;
+    white-space: nowrap;
+    font-family: var(--body-font-family);
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  header nav[aria-expanded='true'] .nav-sections {
+    align-self: unset;
+    display: block;
+    visibility: visible;
+    width: 394px;
+    margin-left: 33%;
+  }
+
+ 
+
+  header nav .nav-sections .nav-drop {
+    position: relative;
+    padding-right: 16px;
+    cursor: pointer;
+  }
+
+  header nav .nav-sections .nav-drop::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0.5em;
+    right: 2px;
+    transform: rotate(135deg);
+    width: 6px;
+    height: 6px;
+    border: 2px solid currentcolor;
+    border-radius: 0 1px 0 0;
+    border-width: 2px 2px 0 0;
+  }
+
+  header nav .nav-sections .nav-drop[aria-expanded='true']::after {
+    top: unset;
+    bottom: 0.5em;
+    transform: rotate(315deg);
+  }
+
+  header nav .nav-sections ul {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li {
+    flex: 0 1 auto;
+    position: relative;
+    font-family: var(--body-font-family);
+    font-size: 13px;
+    color: rgb(81, 79, 79);
+   
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -393,5 +496,17 @@ header nav .nav-tools {
     font-size: 12px;
 
     height: 38px;
+
+}
+.nav_action{
+  color: black !important;
+  padding: 8px;
+  /* width: 17px; */
+  margin-right: 2px;
+   text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.8); 
+ font-family: var(--body-font-family);
+  cursor: pointer;
+  background-color:rgb(255, 234, 0);
+
 
 }

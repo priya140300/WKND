@@ -8,6 +8,7 @@
     overflow-x: hidden;
 }
 .details-wrapper{
+    box-sizing: border-box;
     padding-top: 9px;
     padding-bottom: 0px;
     padding-left: 14px;
@@ -16,9 +17,12 @@
 .details-wrap{
     height: 317px;
     margin-bottom: 39px;
+    width: 271px;
 }
 .details-img{
     height: 185px;
+    display: flex;
+    justify-content: center;
 }
 .details-img picture{
     width: 89%;
@@ -34,13 +38,14 @@
     object-fit: cover;
 }
 .artist-name{
-    width: 84%;
+   display: flex;
+   justify-content: center;
 }
 .artist-name > h3 {
     height: 36px;
     display: flex;
     margin-top: -8px;
-    padding-left: 87px;
+    
     font-size: 24px;
     font-weight: 400;
     font-family: Asar, Georgia, "Times New Roman", Times, serif;
@@ -75,7 +80,8 @@
 
 .artist-domain{
     height: 21px;
-    padding: 0 42px;
+    display: flex;
+    justify-content: center;
 }
 .artist-domain > h5{
     font-family: var(--body-font-family);
@@ -93,13 +99,11 @@
     font-weight: 600;
 
 }
-#influencer--writer{
-    padding-left: 48px;
-}
+
 
 .social-link{
     margin-top: -11px;
-    padding: 18px 23px 0 0px;
+    padding-top: 32px;
     height: 48px;
     justify-content: center;
     display: flex;
@@ -124,6 +128,7 @@
     
     margin-left: 15px;
 }
+
 .content-para{
     padding-right: 13px;
 }
@@ -132,4 +137,13 @@
     font-size: 13px;
     text-align: justify;
     line-height: 30px;
+}
+@media (width >= 768px){
+    .details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+
 }

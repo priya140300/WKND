@@ -1,4 +1,9 @@
 export default function decorate(block){
+
+    const 
+    adventureFirst = block.querySelector("div");
+    console.log(adventureFirst);
+    adventureFirst.className="advntr-first";
    
    const alaskanWrap =   block.querySelectorAll("div")[0];
    const alaskanAdvent = alaskanWrap.querySelector("div");
@@ -39,6 +44,8 @@ export default function decorate(block){
 
    const amazonImg = amazonWrap.querySelectorAll("div")[2];
    amazonImg.className="alaskan-img";
+
+
 
 
 }

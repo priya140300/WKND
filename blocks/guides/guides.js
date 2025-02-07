@@ -30,7 +30,7 @@ export default function decorate(block) {
     guideImg2.className="details-img";
     
     const guideDesc2 = guidesBlock2.querySelectorAll("div")[1];
-    guideDesc2.className="guide-descVar";
+    guideDesc2.className="guide-desc";
 
     const guideLinks2 = guidesBlock2.querySelectorAll("div")[2];
     guideLinks2.className="social-link";

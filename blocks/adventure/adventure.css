@@ -132,3 +132,18 @@
     height: 100%;
 
 }
+@media (width >= 768px ){
+    
+.adventure{
+    box-sizing: border-box;
+    padding: 0 14px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+}
+.advntr-first{
+    margin-right: 42px;
+}
+
+
+}

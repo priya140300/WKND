@@ -64,6 +64,9 @@ export default async function decorate(block){
    const articlelistContainer = document.querySelector(".articlelist");
    articlelistContainer.prepend(articlesWrap);
    console.log(articlesWrap);
+
+   const articleBlock = block.querySelector("div");
+   articleBlock.className = "articles-wrapper";
           
    
 
