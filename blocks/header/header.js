@@ -258,7 +258,7 @@ navtools.appendChild(navContainer);
 
   navItem1.addEventListener('click', () => {
     
-    window.location="/magazine";
+    window.location="https://main--wknd--priya140300.aem.page/magazine/magazine";
   });
   
   navItem2.addEventListener('click', () => {
@@ -266,7 +266,15 @@ navtools.appendChild(navContainer);
     window.location.href = 'https://main--wknd--priya140300.aem.page/about/about';
   });
 
+  const nav_slide = document.createElement("div");
+  nav_slide.className="nav-slide";
   console.log(navItems);
+  //targeting the grid btn
+  const navIcon =  block.querySelector(".nav-hamburger");
+  navIcon.addEventListener(('click'),()=>{
+    nav_slide.className="nav-slideOpen";
+
+  })
 
   
 }

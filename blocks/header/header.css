@@ -510,3 +510,12 @@ header nav .nav-tools {
 
 
 }
+.nav-slide{
+  display: none;
+}
+.nav-slideOpen{
+  display: block;
+  width: 60%;
+  background-color: black;
+  
+}
