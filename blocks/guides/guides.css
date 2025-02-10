@@ -62,12 +62,35 @@
 
 }
 @media (width >= 768px){
+     .guides{
+         display: flex;
+        flex-wrap: wrap;
+       
+        justify-content: space-around;
+    }
+    .details-wrap{
+        width: 271px;
+
+
+    }
+
+
+}
+@media (width >= 1015px){
     .guides{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 25px;
+      
         justify-content: space-around;
     }
+    .details-wrap{
+        width: 207px;
+
+
+    }
     
+     .details-container > .feature_cont{
+        display: block;
+     }
 
 }

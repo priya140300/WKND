@@ -1,6 +1,6 @@
 export default function decorate(block) {
     
-    console.log(block);
+    // console.log(block);
     
       const guideWrap = block.querySelectorAll("div");
       guideWrap.forEach((guide) =>{

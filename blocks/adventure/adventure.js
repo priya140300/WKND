@@ -2,8 +2,14 @@ export default function decorate(block){
 
     const 
     adventureFirst = block.querySelector("div");
+
     console.log(adventureFirst);
     adventureFirst.className="advntr-first";
+    //SELECTING THE OTHER DIV OF ADVENTURE BLOCK
+    const amazonBlock = adventureFirst.nextElementSibling;
+    console.log(amazonBlock);
+    amazonBlock.className="amazon-block";
+
    
    const alaskanWrap =   block.querySelectorAll("div")[0];
    const alaskanAdvent = alaskanWrap.querySelector("div");

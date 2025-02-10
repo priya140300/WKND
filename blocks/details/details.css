@@ -17,7 +17,7 @@
 .details-wrap{
     height: 317px;
     margin-bottom: 39px;
-    width: 271px;
+    /* width: 271px; */
 }
 .details-img{
     height: 185px;
@@ -142,8 +142,36 @@
     .details{
         display: flex;
         flex-wrap: wrap;
+        /* width: 271px; */
         justify-content: space-around;
     }
+    .details-wrap{
+        width: 271px;
+
+
+    }
     
+     .details-container > .feature_cont{
+        display: block;
+     }
+
+}
+
+@media (width >= 1015px){
+    .details{
+        display: flex;
+        flex-wrap: wrap;
+      
+        justify-content: space-around;
+    }
+    .details-wrap{
+        width: 207px;
+
+
+    }
+    
+     .details-container > .feature_cont{
+        display: block;
+     }
 
 }

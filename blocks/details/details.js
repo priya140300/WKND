@@ -50,7 +50,7 @@ export default function decorate(block) {
       contentPara.className="content-para";
 
 
-
+  console.log(block );
      
 
 

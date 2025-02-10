@@ -266,15 +266,18 @@ navtools.appendChild(navContainer);
     window.location.href = 'https://main--wknd--priya140300.aem.page/about/about';
   });
 
+  const body_container = document.querySelector(".appear");
+
   const nav_slide = document.createElement("div");
+  // body_container.prepend(nav_slide);
   nav_slide.className="nav-slide";
   console.log(navItems);
-  //targeting the grid btn
+  //targeting the grid icon
   const navIcon =  block.querySelector(".nav-hamburger");
-  navIcon.addEventListener(('click'),()=>{
-    nav_slide.className="nav-slideOpen";
+  // navIcon.addEventListener(('click'),()=>{
+  //   nav_slide.className="nav-slideOpen";
 
-  })
+  // })
 
   
 }

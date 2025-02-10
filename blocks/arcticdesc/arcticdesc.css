@@ -1,0 +1,28 @@
+.arcticdesc{
+    padding: 0 14px;
+}
+.descBox-h2{
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+
+}
+.descBox-h4{
+    font-weight: 600;
+    font-family: var(--body-font-family);
+    font-size: 16px;
+
+}
+.descBox-para1{
+    font-size: 18px;
+    line-height: 45px;
+    font-family: var(--body-font-family);
+
+}
+.descBox-para2{
+    margin: 18px 40px;
+    font-size: 18px;
+    line-height: 27px;
+
+}

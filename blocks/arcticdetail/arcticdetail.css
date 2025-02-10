@@ -1,0 +1,62 @@
+.arcticdetail{
+    padding: 0 14px;
+    position: relative;
+}
+.detail-wrap{
+    width: 60px;
+}
+.details > picture{
+    display: block;
+    width: 60px;
+    height: 60px
+}
+.links-heading{
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+
+}
+.links-title{
+    font-size: 12px;
+    line-height: 30px;
+    color: rgb(105, 105, 105);
+    font-weight: 400;
+    font-family: var(--body-font-family);
+
+}
+.details > picture > img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 29px;
+    height: 100%;
+
+}
+.links-paragraph{
+    display: flex;
+    background-color: #292828;
+    height: 47px;
+    margin-right: 191px;
+
+}
+.links-paragraph > picture{
+    height: 22px;
+    display: block;
+    width: 22px;
+    margin-top: 11px;
+    margin-left: 16px;
+
+}
+.links-paragraph > picture > img{
+    height: 100%;
+   
+    width: 100%;
+    object-fit: cover;
+
+}
+.info-wrap{
+    position: absolute;
+    
+    left: 103px;
+    bottom: 48px;
+}

@@ -173,46 +173,24 @@ header nav .nav-hamburger-icon::after {
   background: currentcolor;
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon,
-header nav[aria-expanded='false'] .nav-hamburger-icon::before,
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
+header nav .nav-hamburger-icon,
+header nav .nav-hamburger-icon::before,
+header nav .nav-hamburger-icon::after {
   height: 3px;
   border-radius: 2px;
   background: currentcolor;
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon::before {
+header nav .nav-hamburger-icon::before {
   top: -8px;
   position: relative;
   width: 33px;
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
+header nav .nav-hamburger-icon::after {
   top: 6px;
   width: 16px;
   margin-top: 2px;
-}
-
-header nav[aria-expanded='true'] .nav-hamburger-icon {
-  height: 22px;
-  width: 10px;
-}
-
-header nav[aria-expanded='true'] .nav-hamburger-icon::before,
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: 3px;
-  left: 1px;
-  transform: rotate(45deg);
-  transform-origin: 2px 1px;
-  width: 24px;
-  height: 2px;
-  border-radius: 2px;
-}
-
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: unset;
-  bottom: 3px;
-  transform: rotate(-45deg);
 }
 
 @media (width >= 900px) {
@@ -513,9 +491,29 @@ header nav .nav-tools {
 .nav-slide{
   display: none;
 }
-.nav-slideOpen{
+/* .nav-slideOpen{
   display: block;
   width: 60%;
   background-color: black;
   
+} */
+
+@media(width >= 1025px){
+  .nav-wrapper{
+    margin: 0 178px;
+  }
+  header nav[aria-expanded='true'] .nav-sections{
+    display: flex;
+            width: 17%;
+            margin-left: 4%;
+        
+  }
+  header nav .nav-tools {
+    margin-right: 30%;
+  }
+  header nav .nav-sections .default-content-wrapper > ul > li{
+    font-size: 11px;
+  }
+ 
+
 }

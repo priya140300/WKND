@@ -206,24 +206,27 @@ async function loadLazy(doc) {
   const featureDesc = doc.querySelector(".feature-desc"); // Define it before using
 
   if (featureDesc) {
-    const desc_para = featureDesc.querySelector("p");
-    const desc_para2 = featureDesc.querySelectorAll("p")[1];
-    const desc_para3 = featureDesc.querySelectorAll("p")[2];
-    
-    desc_para2.className="desc-para2";
-  console.log(desc_para2);
-
-  desc_para3.className="content_action";
-
+    const desc_para = featureDesc.querySelectorAll("p")[0];
     if (desc_para) {
       desc_para.className = "desc-para";
       console.log(desc_para);
     } else {
-      console.log("⚠️ No <p> found inside .feature-desc");
+      console.log("No <p> found inside .feature-desc");
     }
-  } 
+
+    const desc_para2 = featureDesc.querySelectorAll("p")[1];
+    desc_para2.className="desc-para2";
+    console.log(desc_para2);
+
+    const desc_para3 = featureDesc.querySelectorAll("p")[2];
+    
+    desc_para3.className="content_action";
+
+    
+  }
+
   else {
-    console.log("⚠️ .feature-desc not found");
+    console.log("feature-desc not found");
   }
 
   const desc_title = doc.getElementById("camping-in-western-australia");
@@ -634,8 +637,25 @@ trip_Act.innerHTML = '';
 trip_Act.appendChild(advtSpan);
 console.log(trip_Act);
 trip_Act.className="trip-act";
-advtSpan.className="trip_action"
+advtSpan.className="trip_action";
 
+
+
+
+
+const defaultCont = document.querySelectorAll(".feature_cont")
+// defaultCont.classList="varieties";
+const story_ul = defaultCont.querySelectorAll("ul")[0];
+console.log(story_ul);
+
+story_ul.className="story-ul";
+const story_liItem1 = story_ul.querySelectorAll("li")[0];
+story_liItem1.className="story-liItem1";
+const story_liItem2 = story_ul.querySelectorAll("li")[1];
+story_liItem2.className="story-liItem2";
+
+
+console.log("end");
 
 
 

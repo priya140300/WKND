@@ -1,0 +1,54 @@
+.arctic{
+    padding: 0 14px;
+}
+.arctic-imgWrap{
+    margin-top: 0;
+    height: auto;
+    width: 100%;
+    
+}
+.arctic-picture{
+    height: 100%;
+    width: 100%;
+    display: block;
+  
+
+}
+.arctic-img{
+    height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+.arctic-list{
+  list-style: none;
+  display: flex;
+  padding: 0px;
+}
+.arctic-li1{
+    font-size: 11px;
+    font-weight: 600;
+    height: 18px;
+
+}
+
+.arctic-li2{
+height: 18px;
+padding: 0px 8px;
+width: 14px;
+margin-top: -6px;
+}
+.arctic-li2 > picture{
+    height: 100%;
+    display: block;
+}
+.arctic-li2 > picture > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.arctic-li3{
+  font-size: 11px;
+  height: 18px;
+}

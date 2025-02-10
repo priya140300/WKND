@@ -143,7 +143,20 @@
 }
 .advntr-first{
     margin-right: 42px;
+    width: 47%;
+}
+.amazon-block{
+    width: 47%;
 }
 
+
+}
+@media (width >=1025px){
+    .advntr-first{
+        width:36% ;
+    }
+    .amazon-block{
+        width:36% ;
+    }
 
 }
