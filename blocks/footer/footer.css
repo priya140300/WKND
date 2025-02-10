@@ -3,7 +3,7 @@ footer {
   font-family: var(--body-font-family);
     font-size: 18px;
     line-height: 27px;
-   height: 578px;
+   height: 538px;
 }
 .footer{
   margin-top: 84px;
@@ -28,8 +28,8 @@ footer .footer > div {
 .footer-imageWrap{
   padding: 0 14px;
     box-sizing: border-box;
-    width: 35%;
-    height: 9%;
+    width: 128px;
+    height: 47px;
 
 }
 .footer-imageWrap picture{
@@ -73,12 +73,13 @@ footer .footer > div {
   
 }
 .media-wrap{
-  height: 40px;
-  width: 16%;
+  height: 42px;
+  width: 29%;
   padding:  0 14px;
   margin-top: 25px;
   background-color: white;
   display: flex;
+  justify-content: space-around;
   margin-left: 11px;
 
  
@@ -86,15 +87,15 @@ footer .footer > div {
 }
 .media-wrap picture{
   display: block;
-  height: 48px;
-  width: 48px;
+  height: 46px;
+  width: 46x;
 
 }
 
 .media-wrap picture img{
   
-  height: 58%;
-  width: 58%;
+  height: 57%;
+  width: 85%;
   margin-top: 9px;
 
 }
@@ -117,5 +118,76 @@ footer .footer > div {
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
+  }
+}
+@media(width >= 1024px){
+  .footer_layout{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-navWrap{
+    display: flex;
+    padding-right: 50px;
+    justify-content: space-around;
+  }
+  .footer-ul{
+    display: flex;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    height: 43px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    width: 566px;
+    padding-top: 4px;
+
+  }
+  .footer-ul li a {
+    color: white;
+    font-family: vr(--body-font-family);
+    font-size: 10px;
+    padding: 15px;
+  }
+  .footer-advntr{
+    font-size: 10px;
+    margin-top: 2px;
+    padding: 15px;
+  }
+  .footer-ul li {
+    font-size: 10px;
+    padding: 15px;
+    margin-top: 2px;
+  }
+ 
+  .media-wrap{
+    margin-top: -13px;
+    padding: 0 14px;
+    width: 54%;
+    height: 42px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 11px;
+  }
+  .social-wrap{
+    display: flex;
+    align-items: center;
+    /* width: ; */
+    justify-content: center;
+  }
+  .footer-para{
+    width: 93px;
+    margin-top: 1px;
+    font-size: 12px;
+    padding: 0px;
+    /* width: ; */
+  }
+  footer{
+    height: 348px;
   }
 }

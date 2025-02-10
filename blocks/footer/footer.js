@@ -73,4 +73,41 @@ export default async function decorate(block) {
     const footer_shop = footer_content.querySelectorAll("p")[3];
     footer_shop.className="footer-shop";
 
+    const socialWrap = document.createElement("div");
+    const footerPara = block.querySelector(".footer-para")
+    socialWrap.appendChild(footerPara);
+    const mediaBox =  block.querySelector(".media-wrap")
+    socialWrap.appendChild(mediaBox);
+    socialWrap.className="social-wrap";
+    console.log(socialWrap);
+
+    const footerWrapper = document.createElement("div");
+    footerWrapper.className="footer_layout";
+const footernavWrap = block.querySelector(".footer-navWrap");
+
+
+console.log(footernavWrap, socialWrap); // Check if they exist
+
+// Append only if the elements exist
+if (footernavWrap) {
+    footerWrapper.appendChild(footernavWrap);
+}
+
+if (socialWrap) {
+    footerWrapper.appendChild(socialWrap);
+}
+
+console.log(footerWrapper);
+const newFooterWrap = footer_wrap.querySelector(".default-content-wrapper");
+console.log(footer_wrap);
+newFooterWrap.prepend(footerWrapper);
+
+console.log(newFooterWrap);
+const footer_advntr = footer_ul.querySelectorAll("div")[1];
+footer_advntr.className="footer-advntr";
+
+
+
+    
+
 }

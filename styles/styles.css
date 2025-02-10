@@ -491,7 +491,7 @@ color: #4a4646;
 }
 .sec-img{
   height: 39%;
-    width: 100vw;
+    width: 100%;
 
 }
 .sec-img picture{
@@ -658,5 +658,8 @@ color: #4a4646;
    @media(width >= 1025px){
     main{
       margin: 0 200px;
+    }
+    .sec-img{
+      width: 100%;
     }
    }
