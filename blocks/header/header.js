@@ -187,7 +187,7 @@ export default async function decorate(block) {
   hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
   <span class="nav-hamburger-icon"> </span>
   </button>`;
-  hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
+  // hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
   nav.prepend(hamburger);
   nav.setAttribute('aria-expanded', 'false');
   // prevent mobile nav behavior on window resize
@@ -266,12 +266,19 @@ navtools.appendChild(navContainer);
     window.location.href = 'https://main--wknd--priya140300.aem.page/about/about';
   });
 
-  const body_container = document.querySelector(".appear");
+  // const body_container = document.querySelector(".appear");
 
-  const nav_slide = document.createElement("div");
+  // const nav_slide = document.createElement("div");
   // body_container.prepend(nav_slide);
-  nav_slide.className="nav-slide";
-  console.log(navItems);
+  // nav_slide.className="nav-slide";
+  // console.log(navItems);
+  //targeting the grid icon
+  // const navIcon =  block.querySelector(".nav-hamburger");
+  
+  // const nav_slide = document.createElement("div");
+  // body_container.prepend(nav_slide);
+  // nav_slide.className="nav-slide";
+  // console.log(navItems);
   //targeting the grid icon
   const navIcon =  block.querySelector(".nav-hamburger");
   // navIcon.addEventListener(('click'),()=>{
@@ -279,5 +286,30 @@ navtools.appendChild(navContainer);
 
   // })
 
+  const sideMenu = document.createElement("div");
+  sideMenu.className="sideMenu";
+  document.body.appendChild(sideMenu);
+
+  const menuList = document.createElement("ul");
+  menuList.innerHTML = `
+  <li><a href="https://main--wknd--priya140300.aem.page/">Home</a></li>
+  <li><a href="https://main--wknd--priya140300.aem.page/magazine/magazine">Magazine</a></li>
+  <li><a href="/adventures">Adventures</a></li>
+  <li><a href="/faqs">FAQs</a></li>
+  <li><a href="https://main--wknd--priya140300.aem.page/about/about">About Us</a></li>
+`;
+    sideMenu.innerHTML = "";
+    sideMenu.appendChild(menuList);
+
+  navIcon.addEventListener("click" ,() => {
+   
+    sideMenu.classList.toggle("show-sideMenu");
+  })
+
+
+
+
+
+  
   
 }

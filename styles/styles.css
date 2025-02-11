@@ -71,16 +71,18 @@
 }
 
 body {
-  display: none;
-  margin: 0;
+  display: block; /* Ensure it's visible */
   overflow-x: hidden;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
+  transition: transform 0.5s ease-in-out; /* Add smooth transition */
 }
-
+body.move-left {
+  transform: translateX(-50vw);
+}
 body.appear {
   display: block;
 }
@@ -580,7 +582,27 @@ color: #4a4646;
   padding: 23px;
 
 }
+#gorgeous-beach-point-breaks{
 
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  line-height: 21px;
+}
+.san-diego-surf{
+  padding: 0 14px;
+}
+.san-diego-surf h2{
+  font-size: 36px;
+    margin-top: 27px;
+    font-family: Asar, Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+
+}
+.san-diego-surf p{
+  line-height: 45px;
+    font-size: 17px;
+    font-family: var(--body-font-family);
+}
 
   @media (width >= 556px) {
     .articles-wrapper{
@@ -663,3 +685,5 @@ color: #4a4646;
       width: 100%;
     }
    }
+
+   

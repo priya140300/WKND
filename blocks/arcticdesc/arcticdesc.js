@@ -8,4 +8,9 @@ export default function decorate(block){
    const descBox_para2 =  descBox.querySelectorAll("p")[1];
      descBox_para2.className="descBox-para2";
 
+     const finalPara = block.querySelectorAll("p")[4];
+     if(finalPara){
+      finalPara.className="descBox-para1";
+     }
+
 }

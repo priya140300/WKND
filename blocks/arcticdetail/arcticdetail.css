@@ -5,10 +5,27 @@
 .detail-wrap{
     width: 60px;
 }
-.details > picture{
+/* .details > picture{
     display: block;
     width: 60px;
-    height: 60px
+    height: 60px;
+    margin-bottom: 53px;
+    
+} */
+.pic-var{
+    display: block;
+    width: 60px;
+    height: 60px;
+   
+
+}
+.pic-var2{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 53px;
+    
+
 }
 .links-heading{
     font-family: Asar, Georgia, "Times New Roman", Times, serif;
@@ -19,6 +36,8 @@
 }
 .links-title{
     font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     line-height: 30px;
     color: rgb(105, 105, 105);
     font-weight: 400;
@@ -36,7 +55,7 @@
     display: flex;
     background-color: #292828;
     height: 47px;
-    margin-right: 191px;
+    width: 136px;
 
 }
 .links-paragraph > picture{

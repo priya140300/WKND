@@ -17,6 +17,10 @@ export default function decorate(block){
     console.log(block.querySelectorAll("div")[5]);
 
  })
+ const arcticLine = document.createElement("hr");
+ arcticLine.className="arc-line";
+ block.appendChild(arcticLine);
+
 
 
 }
