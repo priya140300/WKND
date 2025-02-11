@@ -1,7 +1,8 @@
 .carousel .carousel-slides-container {
     position: relative;
     width: 100%;
-    height: 494px;
+    /* height: 494px; */
+    /* height: auto; */
    
   }
   strong {
@@ -34,7 +35,7 @@
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
-    top: 32px;
+    top: 18px;
     align-items: flex-start;
     justify-content: center;
     position: relative;
@@ -84,8 +85,8 @@
     font-size: 18px;
     position: relative;
     font-family: var(--body-font-family);
-    height: 279px;
-    margin-bottom: 105px;
+    height: 323px;
+    margin-bottom: 20px;
   }
   #wknd-adventures{
     font-family: var(--fontFamilySerif, "Asar", Georgia, "Times New Roman", Times, serif);
@@ -235,13 +236,24 @@
       scroll-snap-align: start;
       display: flex;
       flex-direction: column;
-      top: 88px;
+      top: 18px;
       align-items: flex-start;
       justify-content: center;
       position: relative;
       width: 100%;
       height: 100%;
       
+    }
+    .carousel .carousel-slide .carousel-slide-content {
+   
+      top: 0%;
+      padding: 0 14px;
+      line-height: 27px;
+      font-size: 18px;
+      position: relative;
+      font-family: var(--body-font-family);
+      height: 323px;
+      margin-bottom: -26px;
     }
 
     
@@ -254,7 +266,8 @@
       scroll-snap-align: start;
       display: flex;
       flex-direction: column;
-      top: 170px;
+      /* top: 170px; */
+      top: 20px;
       align-items: flex-start;
       justify-content: center;
       position: relative;
@@ -262,6 +275,19 @@
       height: 100%;
       
     }
+    .carousel .carousel-slide .carousel-slide-content {
+   
+      top: 0%;
+      padding: 0 14px;
+      line-height: 27px;
+      font-size: 18px;
+      position: relative;
+      font-family: var(--body-font-family);
+      height: 323px;
+      margin-bottom: -69px;
+    }
+
+    
 
     
   } 
@@ -273,7 +299,7 @@
       scroll-snap-align: start;
       display: flex;
       flex-direction: column;
-      top: 210px;
+      top: 16px;
       align-items: flex-start;
       justify-content: center;
       position: relative;

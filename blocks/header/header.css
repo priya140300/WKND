@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: center;
   transition: transform 0.5s ease-in-out;
-  transform: translateX(-79vw); /* Initially hidden */
+  transform: translateX(-120vw); /* Initially hidden */
   /* z-index: 1300; */
 }
 
@@ -64,7 +64,9 @@
 }
 .sideMenu ul{
   list-style: none;
-  margin-top: -37px;
+  /* margin-top: -37px; */
+  margin-top: -19px;
+
   padding: 0 18px;
 }
 .sideMenu ul li{
