@@ -175,3 +175,13 @@
      }
 
 }
+@media(width >= 1192px){
+    
+    .about-block{
+        margin: 0 200px;
+
+    }
+   
+
+
+}

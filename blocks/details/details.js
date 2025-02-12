@@ -51,7 +51,10 @@ export default function decorate(block) {
 
 
   console.log(block );
-     
+
+     const aboutBlock = document.querySelector(".section.details-container.guides-container");
+console.log(aboutBlock);
+aboutBlock.className="about-block";
 
 
 

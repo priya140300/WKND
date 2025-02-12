@@ -288,7 +288,7 @@ navtools.appendChild(navContainer);
 
   const sideMenu = document.createElement("div");
   sideMenu.className="sideMenu";
-  document.body.appendChild(sideMenu);
+  document.body.prepend(sideMenu);
 
   const menuList = document.createElement("ul");
   menuList.innerHTML = `
@@ -302,13 +302,30 @@ navtools.appendChild(navContainer);
     sideMenu.appendChild(menuList);
 
   navIcon.addEventListener("click" ,() => {
-   
+
+      
     sideMenu.classList.toggle("show-sideMenu");
+    baseBlock.classList.toggle("shift-base");
   })
+  
+  //Wrapping the header,main,footer to apply translate
 
+  
+    const baseBlock = document.createElement("div");
 
+  const headerBlock = document.querySelector("header");
+  const mainBlock = document.querySelector("main");
+  const footerBlock = document.querySelector("footer");
 
+  baseBlock.appendChild(headerBlock);
+  baseBlock.appendChild(mainBlock);
+  baseBlock.appendChild(footerBlock);
 
+  document.body.appendChild(baseBlock);
+  baseBlock.className="base-block";
+
+  
+  
 
   
   

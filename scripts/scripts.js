@@ -640,41 +640,7 @@ trip_Act.className="trip-act";
 advtSpan.className="trip_action";
 
 
-
-
-
-const defaultCont = document.querySelectorAll(".feature_cont")
-// defaultCont.classList="varieties";
-const story_ul = defaultCont.querySelectorAll("ul")[0];
-console.log(story_ul);
-
-story_ul.className="story-ul";
-const story_liItem1 = story_ul.querySelectorAll("li")[0];
-story_liItem1.className="story-liItem1";
-const story_liItem2 = story_ul.querySelectorAll("li")[1];
-story_liItem2.className="story-liItem2";
-
-
-console.log("end");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const defaultContain = document.querySelectorAll(".feature_cont")
 
 
 

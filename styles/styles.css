@@ -85,6 +85,7 @@ body.move-left {
 }
 body.appear {
   display: block;
+  margin: 0;
 }
 
 header {
@@ -604,6 +605,9 @@ color: #4a4646;
     font-family: var(--body-font-family);
 }
 
+
+
+
   @media (width >= 556px) {
     .articles-wrapper{
       display: flex;
@@ -678,12 +682,34 @@ color: #4a4646;
 
   }
    @media(width >= 1025px){
-    main{
-      margin: 0 200px;
-    }
+   
     .sec-img{
       width: 100%;
     }
+   }
+   @media(min-width: 1192px){
+   
+    
+    main .section:nth-of-type(2) {
+      /* padding: 0 96px; */
+      padding: 0 4%;
+
+      
+       }
+        main .section:nth-of-type(3) {
+        padding: 0 4%;
+        
+         }
+         main .section:nth-of-type(5) {
+          padding: 0 4%;
+          
+           }
+         #next-adventures{
+          padding: 0 4%;
+         }
+
+    
+
    }
 
    
