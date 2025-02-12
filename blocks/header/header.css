@@ -541,7 +541,18 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-tools {
     margin-right: 30%;
   }
- 
+ .carousel .carousel-navigation-buttons{
+  position: absolute;
+  bottom: -66px;
+  transform: translateY(-50%);
+  right: 0;
+  left: auto;
+  width: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+ }
  
 }
 
@@ -598,25 +609,3 @@ header nav .nav-tools {
 
 }
 
-
-/* width >= 1025px */
-/* @media(width >= 1200px){
-  .nav-wrapper{
-    margin: 0 178px;
-  }
-  header nav[aria-expanded='true'] .nav-sections{
-    display: flex;
-            width: 17%;
-            margin-left: 4%;
-        
-  }
-  header nav .nav-tools {
-    margin-right: 30%;
-  }
-  header nav .nav-sections .default-content-wrapper > ul > li{
-    font-size: 11px;
-    padding: 3px;
-  }
- 
-
-} */
