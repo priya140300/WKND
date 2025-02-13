@@ -2,11 +2,11 @@
   wknd:
     include:
 
-      - /magazine/ 
+      - /**
 
     exclude:
 
-      - /magazine/magazine
+      - /documents/snippets/**
 
     target: /magazine/magazine-query-index.json
 
