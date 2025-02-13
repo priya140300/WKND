@@ -130,6 +130,7 @@
     width: 100%;
     object-fit: cover;
     height: 100%;
+    opacity: 0.6;
 
 }
 @media (width >= 768px ){
@@ -160,3 +161,16 @@
     }
 
 }
+
+   
+    @media (min-width: 1192px) {
+    .section.adventure-container.adventure-container {
+        position: static !important;
+        width: auto !important;
+    }
+}
+    
+
+   
+   
+    
